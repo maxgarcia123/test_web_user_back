@@ -7,8 +7,8 @@ import {
 
 export function setupSwagger(app: INestApplication) {
   const options = new DocumentBuilder()
-    .setTitle('Ponto Tel API')
-    .setDescription('API da aplicação proof Ponto Tel ')
+    .setTitle('Web Application API')
+    .setDescription('API da aplicação Web Ponto Tel ')
     .setVersion('1.0')
     .setContact(
       'Max Garcia',
@@ -19,7 +19,7 @@ export function setupSwagger(app: INestApplication) {
     .build();
 
   const custom: SwaggerCustomOptions = {
-    customSiteTitle: 'My_contacts API',
+    customSiteTitle: 'Web_application API',
   };
 
   const document = SwaggerModule.createDocument(app, options);
